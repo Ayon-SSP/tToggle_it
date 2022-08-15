@@ -20,6 +20,8 @@ def speat(str):
     speak.speak(str)
 import requests
 import json
+import urllib.request
+from PIL import Image
 
 if __name__ == '__main__':
     speat("news for today...")
@@ -44,6 +46,9 @@ if __name__ == '__main__':
         print(article['author'])
         print(f"{i})",end=" ")
         print(article['title'])
+        URL_Link = article['urlToImage']        
+        urllib.request.urlretrieve(URL_Link,"This.png")
+        Image.open("This.png").show()
         # print(article['title'])
         speat(article['title'])
         print("for more click on the link",end=" :-")
