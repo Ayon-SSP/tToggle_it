@@ -19,3 +19,8 @@ stem3:
 ## News Displaying📺 & Reading🔊 
 ![This is an image](Source/sss.png)
 If Want to read the complete News go to the link in output.
+
+## Displaying📺 the Image🖼️ related to the news🚀
+This Images are taken form the same news api and They are related to the topic.
+
+![This is an image](Source/ss2.png)
