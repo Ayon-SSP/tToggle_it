@@ -38,8 +38,8 @@ if __name__ == '__main__':
         url_select = url_business
 
     news = requests.get(url_select).text
-    # print(news)
     news_dict =json.loads(news)
+    # print(json.dumps(news_dict, indent=2))
     arts = news_dict['articles']
     print("///////////////////////////////////////////////////////////")
     for article,i in zip(arts,range(1,10)):
